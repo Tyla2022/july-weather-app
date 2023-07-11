@@ -69,7 +69,6 @@ function displayFahrenheitTemperature(event) {
 
 function displayCelsiusTemperature(event) {
   event.preventDefault();
-
   celsiusLink.classlist.add("active");
   fahrenheitLink.classlist.remove("active");
   let temperatureElement = document.querySelector("#temperature");
@@ -82,6 +81,6 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", handlesubmit);
 
 let celsiusLink = document.querySelector("#celsius-link");
-celsiusLinkLink.addEventListener("click", displayCelsiusTemperature);
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("New York");
